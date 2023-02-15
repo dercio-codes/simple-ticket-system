@@ -6,7 +6,7 @@ import html2canvas from "html2canvas";
 
 export default function Home() {
   const [value, setValue] = React.useState(
-    "1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed"
+    "ykm-thee-mc-is-mr-lovers-and-friends"
   );
   const [imageLoaded, setImageLoaded] = React.useState(false);
   const [imageSrc, setImageSrc] = React.useState("");
@@ -347,7 +347,9 @@ export default function Home() {
               padding: "21px",
             }}
           >
-            {imageLoaded ? (
+            <MyQRCode />
+
+            {/* {imageLoaded ? (
               <Box
                 sx={{
                   height: "250px",
@@ -360,7 +362,7 @@ export default function Home() {
               />
             ) : (
               <MyQRCode />
-            )}
+            )} */}
           </Box>
         </Box>
       </Box>
